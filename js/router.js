@@ -1,7 +1,7 @@
 'use strict'
 
 const routes = {
-    '/' : '/pages/home.html',
+    '/' : '/pages/index.html',
     '/vermelho' : '/pages/vermelho.html',
     '/azul' : '/pages/azul.html',
     '/verde' : '/pages/green.html',
