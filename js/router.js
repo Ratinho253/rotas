@@ -1,7 +1,7 @@
 'use strict'
 
 const routes = {
-    '/' : '/pages/index.html',
+    '/' : '/index.html',
     '/vermelho' : '/pages/vermelho.html',
     '/azul' : '/pages/azul.html',
     '/verde' : '/pages/green.html',
@@ -13,7 +13,8 @@ const route = async () => {
     window.history.pushState({}, "", window.event.target.href)
 
     const path = window.location.pathname
-    
+    console.log();
+
     const response = await fetch(routes[path])
     const html = await response.text()
 
